@@ -101,23 +101,6 @@ function armazenarNaMatriz(){
         matriz[1][0] = vetor[cont-2];
         matriz[1][1] = vetor[cont-2] * vetor[cont-2];
     }
-    /* for(let i = 0; i < 2; i++){
-        for(let j = 0; j < 2; j++){
-            if(i == 0){
-                if(j == 0){
-                    matriz[i][j] == vetor[cont];
-                }else{
-                    matriz[i][j] == vetor[cont] * vetor[cont];
-                }
-            }else if(contador > 1){
-                if(j == 0){
-                    matriz[i][j] == vetor[cont]-1;
-                }else{
-                    matriz[i][j] == vetor[cont-1] * vetor[cont-1];
-                }
-            }
-        }
-    } */
 
     cxUltNum.innerHTML = matriz[0][0];
     cxUltQuadrado.innerHTML = matriz[0][1];
