@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/valform.js"></script>
+    <title>Avaliação</title>
+</head>
+<body>
+    <header>
+        <h1>Prova</h1>
+    </header>
+    <main>
+        <section id="entrada-dados">
+            <h1>Entrada de Dados:</h1>
+            <form action="#" method="get" onsubmit="return valForm()">
+                <label for="num">Informe um Número Inteiro:</label>
+                <input type="text" id="num" placeholder="Número">
+                <div id="botoes">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <section id="saida-dados">
+            <h1>Saída de Dados:</h1>
+            <h2>Todos os números digitados:</h2>
+            <p class="saidas" id="todos-numeros">-</p>
+            <h2>Quantidade de Números Digitados:</h2>
+            <p class="saidas" id="quantidade">0</p>
+            <h2>Maior Número Informado:</h2>
+            <p class="saidas" id="maior-num">-</p>
+            <h2>Menor Número Informado:</h2>
+            <p class="saidas" id="menor-num">-</p>
+            <h2>Soma de Todos os Números:</h2>
+            <p class="saidas" id="soma-total">0</p>
+            <h2>Média do Vetor Informado:</h2>
+            <p class="saidas" id="media-total">-</p>
+            <h2>Matriz Com os Últimos Nºs Informados:</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Número</th>
+                        <th>Seu Quadrado</th>
+                    </tr>
+                    <tr>
+                        <th>Último Nº Informado</th>
+                        <th id="ult-num">-</th>
+                        <th id="ult-quadrado">-</th>
+                    </tr>
+                    <tr>
+                        <th>Penúltimo Nº Informado</th>
+                        <th id="penult-num">-</th>
+                        <th id="penult-quadrado">-</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Realizado por Gustavo Henrique Tamanini de Souza.</p>
+    </footer>
+</body>
+</html>
