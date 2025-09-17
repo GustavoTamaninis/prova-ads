@@ -1,7 +1,6 @@
 let cont = 0;
 
 let vetor = [];
-let maisInseridos = [];
 
 let maiorNum;
 let menorNum;
@@ -34,10 +33,6 @@ function valForm(){
         quantosInseridos(cont);
         armazenarNaMatriz();
         exibirTodosOsNumeros();
-
-        for(let i = 0; i < vetor.length; i++){
-            console.log(vetor[i]);
-        }
     }
     return false;
 }
@@ -91,13 +86,9 @@ function armazenarNaMatriz(){
     cxUltQuadrado = document.getElementById("ult-quadrado");
     cxPenultQuadrado = document.getElementById("penult-quadrado");
 
-    if(cont <= 1){
-        matriz[0][0] = vetor[cont-1];
-        matriz[0][1] = vetor[cont-1] * vetor[cont-1];
-    }else{
-        matriz[0][0] = vetor[cont-1];
-        matriz[0][1] = vetor[cont-1] * vetor[cont-1];
-
+    matriz[0][0] = vetor[cont-1];
+    matriz[0][1] = vetor[cont-1] * vetor[cont-1];
+    if(cont > 1){
         matriz[1][0] = vetor[cont-2];
         matriz[1][1] = vetor[cont-2] * vetor[cont-2];
     }
@@ -110,7 +101,6 @@ function armazenarNaMatriz(){
 }
 
 function exibirTodosOsNumeros(){
-   
     cxTodosNumeros = document.getElementById("todos-numeros");
     if(cont == 1){
         cxTodosNumeros.innerHTML = (vetor[cont-1] + "; ");

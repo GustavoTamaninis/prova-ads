@@ -72,12 +72,6 @@ form{
     flex-flow: column;
 }
 
-/* legend{
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 15px;
-} */
-
 label{
     font-size: 1.1em;
     font-weight: bold;
@@ -125,12 +119,9 @@ h2{
     border-radius: 5px;
 }
 
-#todos-numeros{
-    
-}
-
-#quantidade, #maior-num, #menor-num, #soma-total, #media-total{
-    width: 120px;
+#quantidade, #maior-num, #menor-num, #soma-total, #media-total, #todos-numeros{
+    min-width: 100px;
+    padding: 0px 5px;
     margin-bottom: 15px;
 }
 
